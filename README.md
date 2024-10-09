@@ -4,9 +4,6 @@
 
 ## Table Of Contents
 
-
-
-
 1. [Objectives](#1-objectives)
 2. [Version Control](#2-version-control)
 3. [File Management](#3-file-management)
@@ -82,8 +79,7 @@ We recommend using **Git** as source code management, here is a few things to co
   [optional footer(s)]
   ```
 
-  \
-* **Branches:** You must follow the branching strategy mentioned in [CodeFlowBranches](./CodeFlowBranches.md)
+* **Branches:** The adopted branching strategy is found in [CodeFlowBranches](./CodeFlowBranches.md)
 
 ## 3. File Management
 
