@@ -10,7 +10,7 @@ These branches which we expect to be permanently available on the repository fol
 
 * **Master** (*master*)
 
-  The production branch, if the repository is published, this is the default branch being presented.
+  The production brance, the code on master always represents a pre-release version.
 
 Except for Hotfixes, we want our codes to follow a one-way merge starting from development > production.
 

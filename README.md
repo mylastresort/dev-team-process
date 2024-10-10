@@ -135,14 +135,14 @@ Before you submit an issue, please search the issue tracker. An issue for your p
 ### 8.4. Comments
 
 ### 8.5. Code Modification
-
+   #### Addressing review feedback
    If we ask for changes via code reviews then:
 
-   Make the required updates to the code.
+   1. Make the required updates to the code.
 
-   Re-run the project test suites to ensure tests are still passing.
+   2. Re-run the project test suites to ensure tests are still passing.
 
-   Create a fixup commit and push to your GitHub repository (this will update your Pull Request):
+   3. Create a fixup commit and push to your GitHub repository (this will update your Pull Request):
 
    ```sh
       git add <files>
@@ -152,20 +152,20 @@ Before you submit an issue, please search the issue tracker. An issue for your p
 
    That's it!
 
-   Updating the commit message
+   #### Updating the commit message
    A reviewer might often suggest changes to a commit message (for example, to add more context for a change or adhere to our commit message guidelines). In order to update the commit message of the last commit on your branch:
 
-   Check out your branch:
+   1. Check out your branch:
 
    ```sh
       git checkout my-fix-branch
    ```
-   Amend the last commit and modify the commit message:
+   2. Amend the last commit and modify the commit message:
 
    ```sh
       git commit --amend
    ```
-   Push to your GitHub repository:
+   3. Push to your GitHub repository:
 
    ```sh
       git push --force-with-lease
