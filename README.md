@@ -173,21 +173,21 @@ Before you submit an issue, please search the issue tracker. An issue for your p
    #### After your pull request is merged
    After your pull request is merged, you can safely delete your branch and pull the changes from the main (upstream) repository:
 
-   Delete the remote branch on GitHub either through the GitHub web UI or your local shell as follows:
+   1. Delete the remote branch on GitHub either through the GitHub web UI or your local shell as follows:
 
    ```sh
       git push origin --delete my-fix-branch
    ```
-   Check out the main branch:
+   2. Check out the main branch:
 
    ```sh
       git checkout main -f
    ```
-   Delete the local branch:
+   3. Delete the local branch:
    ```sh
       git branch -D my-fix-branch
    ```
-   Update your local main with the latest upstream version:
+   4. Update your local main with the latest upstream version:
 
    ```sh
       git pull --ff upstream main
