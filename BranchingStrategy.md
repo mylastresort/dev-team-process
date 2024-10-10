@@ -1,4 +1,4 @@
-# Feature Branch (Branching Strategy)
+# Feature Branch: A Practical Guide
 
 ## Code Flow Branches
 
