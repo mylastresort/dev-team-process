@@ -129,6 +129,20 @@ Before you submit an issue, please search the issue tracker. An issue for your p
 ### 8.1. Continous Integration
 
 ### 8.2. Pull Requests
+#### Labelling pull requests
+There are five labels that target PRs to versions:
+
+|Label |  Description|
+|---|----|
+target: major  |  A change that includes a backwards-incompatible behavior or API change.
+target: minor | A change that introduces a new, backwards-compatible functionality.
+target: patch | A backwards-compatible bug fix.
+
+Every PR must have exactly one `target: *` label. Angular's dev tooling will merge the pull request into its base branch and then cherry-pick the commits to the appropriate branches based on the specified target label.
+
+The vast majority of pull requests will target `major`, `minor`, or `patch` based on the contents of the code change.
+
+Breaking changes, marked with `target: major`, can only be merged when `main` represents the next major version.
 
 ### 8.3. Assignements
 
