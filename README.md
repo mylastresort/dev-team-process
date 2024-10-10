@@ -149,7 +149,6 @@ Before you submit an issue, please search the issue tracker. An issue for your p
       git commit --fixup HEAD
       git push
    ```
-   For more info on working with fixup commits see here.
 
    That's it!
 
