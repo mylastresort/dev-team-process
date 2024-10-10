@@ -32,22 +32,18 @@
    6\.3. [System Testing](#63-system-testing)
 
    6\.4. [QA Testing](#64-qa-testing)
-7. [Code Review](#7-code-review)
+7. [Bug Report](#7-bug-report)
+8. [Code Review](#8-code-review)
 
-   7\.1. [Continous Integration](#71-continous-integration)
+   8\.1. [Continous Integration](#81-continous-integration)
 
-   7\.2. [Pull Requests](#72-pull-requests)
+   8\.2. [Pull Requests](#82-pull-requests)
 
-   7\.3. [Assignments](#73-assignements)
+   8\.3. [Assignments](#83-assignements)
 
-   7\.4. [Comments](#74-comments)
+   8\.4. [Comments](#84-comments)
 
-   7\.5. [Code Modification](#75-code-modification)
-8. [Bug Report](#8-bug-report)
-
-   8\.1. [Issue Assignment](#81-issue-management)
-
-   8\.2. [Version Control](#82-version-control)
+   8\.5. [Code Modification](#85-code-modification)
 
 ## 1. Objectives
 
@@ -59,7 +55,7 @@ The key takeaways from this document is to know how to write code, using a unifo
 
 We recommend using **Git** as source code management, here is a few things to consider when choosing git:
 
-* **Commits:** They must follow these specified [naming rules](https://github.com/angular/angular/blob/main/CONTRIBUTING.md#commit-message-header).
+* **Commit Message Format:** They must follow these specified [format rules](https://github.com/angular/angular/blob/main/CONTRIBUTING.md#commit-message-header).
 
   ```
   <type>(<scope>): <short summary>
@@ -91,7 +87,7 @@ We recommend using **Git** as source code management, here is a few things to co
       feat!: send an email to the customer when a product is shipped
       ```
 
-  * Other [examples](https://www.conventionalcommits.org/en/v1.0.0/#examples).
+  * For more examples see [here](https://www.conventionalcommits.org/en/v1.0.0/#examples).
 
 * **Branches:** The adopted branching strategy is found in [CodeFlowBranches](./CodeFlowBranches.md)
 
@@ -125,20 +121,75 @@ We recommend using **Git** as source code management, here is a few things to co
 
 ### 6.4. QA Testing
 
-## 7. Code Review
+## 7. Bug Report
+Before you submit an issue, please search the issue tracker. An issue for your problem might already exist and the discussion might inform you of workarounds readily available.
 
-### 7.1. Continous Integration
+## 8. Code Review
 
-### 7.2. Pull Requests
+### 8.1. Continous Integration
 
-### 7.3. Assignements
+### 8.2. Pull Requests
 
-### 7.4. Comments
+### 8.3. Assignements
 
-### 7.5. Code Modification
+### 8.4. Comments
 
-## 8. Bug Report
+### 8.5. Code Modification
 
-### 8.1. Issue Management
+   If we ask for changes via code reviews then:
 
-### 8.2. Version Control
+   Make the required updates to the code.
+
+   Re-run the project test suites to ensure tests are still passing.
+
+   Create a fixup commit and push to your GitHub repository (this will update your Pull Request):
+
+   ```sh
+      git add <files>
+      git commit --fixup HEAD
+      git push
+   ```
+   For more info on working with fixup commits see here.
+
+   That's it!
+
+   Updating the commit message
+   A reviewer might often suggest changes to a commit message (for example, to add more context for a change or adhere to our commit message guidelines). In order to update the commit message of the last commit on your branch:
+
+   Check out your branch:
+
+   ```sh
+      git checkout my-fix-branch
+   ```
+   Amend the last commit and modify the commit message:
+
+   ```sh
+      git commit --amend
+   ```
+   Push to your GitHub repository:
+
+   ```sh
+      git push --force-with-lease
+   ```
+   #### After your pull request is merged
+   After your pull request is merged, you can safely delete your branch and pull the changes from the main (upstream) repository:
+
+   Delete the remote branch on GitHub either through the GitHub web UI or your local shell as follows:
+
+   ```sh
+      git push origin --delete my-fix-branch
+   ```
+   Check out the main branch:
+
+   ```sh
+      git checkout main -f
+   ```
+   Delete the local branch:
+   ```sh
+      git branch -D my-fix-branch
+   ```
+   Update your local main with the latest upstream version:
+
+   ```sh
+      git pull --ff upstream main
+   ```
