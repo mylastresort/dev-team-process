@@ -78,6 +78,20 @@ We recommend using **Git** as source code management, here is a few things to co
   
   [optional footer(s)]
   ```
+  Examples:
+   * Commit message with description and breaking change footer
+      ```
+      feat: allow provided config object to extend other configs
+
+      BREAKING CHANGE: `extends` key in config file is now used for extending other config files
+      ```
+   
+   * Commit message with ! to draw attention to breaking change
+      ```
+      feat!: send an email to the customer when a product is shipped
+      ```
+
+  * Other [examples](https://www.conventionalcommits.org/en/v1.0.0/#examples).
 
 * **Branches:** The adopted branching strategy is found in [CodeFlowBranches](./CodeFlowBranches.md)
 
