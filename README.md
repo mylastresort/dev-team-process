@@ -49,7 +49,7 @@
 
 This document describes a process specification from a specific side of the software development lifecycle strategy, mainly these three phases: **Code**, **Build** and **Test**.
 
-The key takeaways from this document is to know how to write code, using a uniform specification of code quality, assuring the use of version control for explicit commit history, feature development and releases, the ability to test code using all forms of software testing.
+The key takeaway from this document is to know how to write code, using a uniform specification of code quality, assuring the use of version control for explicit commit history, feature development and releases, the ability to test code using all forms of software testing.
 
 ## 2. Version Control
 
