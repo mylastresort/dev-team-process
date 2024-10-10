@@ -89,9 +89,35 @@ We recommend using **Git** as source code management, here is a few things to co
 
   * For more examples see [here](https://www.conventionalcommits.org/en/v1.0.0/#examples).
 
-* **Branches:** The adopted branching strategy is found in [BranchingStrategy](./BranchingStrategy.md)
+* **Branches:** 
+   These branches which we expect to be permanently available on the repository follow the flow of code changes starting from development until the production.
+   
+   * **Master** (*master*)
+   
+     All new features, their tests and bug fixes should be brought to the main branch.
+   
+   * **Release** (*release*)
+   
+     A branch for tagging a specific release version.
+
+   * **Feature** (*feature*) temporary branches
+
+      Any code changes for a new module or use case should be done on a feature branch.
+
+   More information can be found here [BranchingStrategy](./BranchingStrategy.md).
 
 ## 3. File Management
+
+When targeting a new project, it can be tedious to impose a general folder structure for all projects, however, you need to consider this main objectif:
+* each project must have these main root folders/files:
+   ```
+   project/
+   ├── README.md
+   ├── [build]
+   ├── doc
+   ├── src
+   └── test
+   ```
 
 ## 4. Code
 
