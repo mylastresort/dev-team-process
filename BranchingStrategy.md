@@ -67,7 +67,7 @@ It is recommended to use all lower caps letters and hyphen (-) to separate words
   A branch for tagging a specific release version
 
   Examples:
-  * release/myapp-1.01.123
+  * release/myapp-1.x
 
   Git also supports tagging a specific commit history of the repository. A release branch is used if there is a need to make the code available for checkout or use.
   
