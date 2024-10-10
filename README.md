@@ -89,7 +89,7 @@ We recommend using **Git** as source code management, here is a few things to co
 
   * For more examples see [here](https://www.conventionalcommits.org/en/v1.0.0/#examples).
 
-* **Branches:** The adopted branching strategy is found in [CodeFlowBranches](./CodeFlowBranches.md)
+* **Branches:** The adopted branching strategy is found in [BranchingStrategy](./BranchingStrategy.md)
 
 ## 3. File Management
 
