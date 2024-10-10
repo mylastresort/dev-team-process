@@ -13,6 +13,8 @@ These branches which we expect to be permanently available on the repository fol
   A branch for tagging a specific release version
 
   Examples:
+  * release/myapp-0.x
+  * release/myapp-0.1.x
   * release/myapp-1.x
   * release/myapp-1.1.x
   * release/myapp-1.2.x
