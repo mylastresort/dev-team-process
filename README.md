@@ -138,11 +138,11 @@ target: major  |  A change that includes a backwards-incompatible behavior or AP
 target: minor | A change that introduces a new, backwards-compatible functionality.
 target: patch | A backwards-compatible bug fix.
 
-Every PR must have exactly one `target: *` label.
+* Every PR must have exactly one `target: *` label.
 
-The vast majority of pull requests will target `major`, `minor`, or `patch` based on the contents of the code change.
+* The vast majority of pull requests will target `major`, `minor`, or `patch` based on the contents of the code change.
 
-Breaking changes, marked with `target: major`, can only be merged when `main`  represents the next major version.
+* Breaking changes, marked with `target: major`, can only be merged when `main`  represents the next major version.
 
 ### 8.3. Assignements
 
