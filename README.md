@@ -112,6 +112,10 @@ When targeting a new project, it can be tedious to impose a general folder struc
 * each project must have these main root folders/files:
    ```
       project/
+      ├── .github
+      │   └── workflows
+      │       └── build.yml
+      ├── .gitignore
       ├── Makefile
       ├── README.md
       ├── doc
@@ -127,8 +131,12 @@ When targeting a new project, it can be tedious to impose a general folder struc
       The choice of having class test files in the same path as the source files is allowed, but other forms of testing must be outside `src` folder.
    * `Makefile (optional)`: for building the source files.
    * `src/docker-compose.yml`: for building docker images.
+   * `.github`: for CI tooling
+   * `.gitignore`: file to ignore tracking files in git.
+      * It must contain `target` or `**/target` on modular project.
 
-   The case where the project has multiple modules, for example frontend and backend, or in a microservice architecture, etc: you can now move `src` and `target` folders to new folders per module/microservice, respecting the same previous root structure (`doc` & `docker-compose.yml` can be skiped).
+   **NOTICE**: The case where the project has multiple modules, hence a **modular project**, e.g frontend and backend, microservice architecture, etc:
+   * you can now move `src` and `target` folders to new folders per microservice/module, respecting the same previous root structure (`doc` & `docker-compose.yml` can be skiped).
 
 ## 4. Code
 
