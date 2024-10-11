@@ -111,13 +111,24 @@ We recommend using **Git** as source code management, here is a few things to co
 When targeting a new project, it can be tedious to impose a general folder structure for all projects, however, you need to consider this main objectif:
 * each project must have these main root folders/files:
    ```
-   project/
-   ├── README.md
-   ├── [build]
-   ├── doc
-   ├── src
-   └── test
+      project/
+      ├── Makefile
+      ├── README.md
+      ├── build
+      ├── doc
+      ├── src
+      │   └── docker-compose.yml
+      └── test
    ```
+   * `README.md`: file describing the content of the repository and how to build and test the project.
+   * `[build]`: build files.
+   * `doc`: anything related to user guide, project references, etc.
+   * `src`: any source code files.
+   * `test`: any test code files must be inside test folder.
+      The choice of having class test files in the same path as the source files is allowed, but other forms of testing must be outside `src` folder.
+   * `Makefile (optional)`: for building the source files.
+   * `src/docker-compose.yml`: for building docker images.
+
 
 ## 4. Code
 
