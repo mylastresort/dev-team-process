@@ -111,17 +111,18 @@ We recommend using **Git** as source code management, here is a few things to co
 When targeting a new project, it can be tedious to impose a general folder structure for all projects, however, you need to consider this main objectif:
 * each project must have these main root folders/files:
    ```
-      project/
-      ├── .github
-      │   └── workflows
-      │       └── build.yml
-      ├── .gitignore
-      ├── Makefile
-      ├── README.md
-      ├── doc
-      ├── docker-compose.yml
-      ├── src
-      └── target
+         project/
+         ├── .github
+         │   └── workflows
+         │       └── build.yml
+         ├── .gitignore
+         ├── Makefile
+         ├── README.md
+         ├── doc
+         ├── docker-compose.yml
+         ├── src
+         ├── target
+         └── test
    ```
    * `README.md`: file describing the content of the repository and how to build and test the project.
    * `[build]`: build files.
@@ -136,7 +137,7 @@ When targeting a new project, it can be tedious to impose a general folder struc
       * It must contain `target` or `**/target` on modular project.
 
    **NOTICE**: The case where the project has multiple modules, hence a **modular project**, e.g frontend and backend, microservice architecture, etc:
-   * you can now move `src` and `target` folders to new folders per microservice/module, respecting the same previous root structure (`doc` & `docker-compose.yml` can be skiped).
+   * You can now move `src`, `target` and `test` folders to new folders per microservice/module, respecting the same previous root structure (`doc` & `docker-compose.yml` can be skiped).
 
 ## 4. Code
 
