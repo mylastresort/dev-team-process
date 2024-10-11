@@ -1,7 +1,5 @@
 # DEV TEAM PROCESS
 
-## DEVELOPMENT PROCESS
-
 ## Table Of Contents
 
 1. [Objectives](#1-objectives)
@@ -9,7 +7,7 @@
 3. [File Management](#3-file-management)
 4. [Code](#4-code)
 
-   4\.1. [Linters](#41-linters)
+   4\.1. [Tools](#41-tools)
 
    4\.2. [Coding Rules](#42-coding-rules)
 
@@ -44,6 +42,7 @@
    8\.4. [Comments](#84-comments)
 
    8\.5. [Code Modification](#85-code-modification)
+9. [Index](#9-index)
 
 ## 1. Objectives
 
@@ -141,7 +140,18 @@ When targeting a new project, it can be tedious to impose a general folder struc
 
 ## 4. Code
 
-### 4.1. Linters
+### 4.1. Tools
+
+#### 4.1.1. Language Choice
+You must prefer a typed language, either staticly or dynamically, but staticly is always preffered.
+
+NOTICE: Make sure to have the latest stable version of the language.
+
+#### 4.1.2. Linters
+Code is linted using predefined configuration file (eslint, clang-tidy, ...)
+
+References:
+* [JS/TS Linter](https://eslint.org/docs/latest/rules/)
 
 ### 4.2. Coding Rules
 
@@ -252,3 +262,5 @@ target: patch | A backwards-compatible bug fix.
    ```sh
       git pull --ff upstream main
    ```
+
+## 9. Index
