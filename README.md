@@ -114,11 +114,10 @@ When targeting a new project, it can be tedious to impose a general folder struc
       project/
       ├── Makefile
       ├── README.md
-      ├── build
       ├── doc
+      ├── docker-compose.yml
       ├── src
-      │   └── docker-compose.yml
-      └── test
+      └── target
    ```
    * `README.md`: file describing the content of the repository and how to build and test the project.
    * `[build]`: build files.
@@ -129,6 +128,7 @@ When targeting a new project, it can be tedious to impose a general folder struc
    * `Makefile (optional)`: for building the source files.
    * `src/docker-compose.yml`: for building docker images.
 
+   The case where the project has multiple modules, for example frontend and backend, or in a microservice architecture, etc: you can now move `src` and `target` folders to new folders per module/microservice, respecting the same previous root structure (`doc` & `docker-compose.yml` can be skiped).
 
 ## 4. Code
 
