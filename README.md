@@ -119,6 +119,7 @@ When targeting a new project, it can be tedious to impose a general folder struc
          ├── README.md
          ├── doc
          ├── docker-compose.yml
+         ├── pull_request_template.md
          ├── src
          ├── target
          └── test
