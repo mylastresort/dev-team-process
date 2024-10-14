@@ -185,6 +185,11 @@ Before you submit an issue, please search the issue tracker. An issue for your p
 ### 8.1. Continous Integration
 
 ### 8.2. Pull Requests
+#### Creating a Pull Request
+When creating a new pull request, consider checking the `pull_request_template.md` document first, given on the root directory of the project.
+
+An example of a such template can be found [here](https://github.com/thingsboard/thingsboard/blob/master/pull_request_template.md).
+
 #### Labelling pull requests
 There are five labels that target PRs to versions:
 
