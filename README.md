@@ -156,6 +156,12 @@ References:
 
 ### 4.2. Coding Rules
 
+To ensure consistency throughout the source code, keep these rules in mind as you are working:
+
+* All features or bug fixes must be tested by one or more specs (unit-tests).
+
+* We follow our own Coding Convetion specified [here](./coding_rules.md), but wrap all code at 100 characters.
+
 ### 4.3. Comments
 
 ### 4.4. Documentation
